@@ -31,6 +31,7 @@ class HOTA(_BaseMetric):
             res[field] = np.zeros((len(self.array_labels)), dtype=np.float)
         for field in self.float_fields:
             res[field] = 0
+        # print(res)
 
         # Return result quickly if tracker or gt sequence is empty
         if data['num_tracker_dets'] == 0:
